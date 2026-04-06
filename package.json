@@ -1,29 +1,16 @@
 {
   "name": "port-scan-cli",
   "version": "1.0.0",
-  "description": "Scan local ports to find which are in use and by what process",
+  "description": "Fast TCP port scanner with service names and banner grabbing",
   "type": "module",
   "bin": {
-    "port-scan": "./dist/index.js"
+    "port-scan-cli": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsup",
-    "prepublishOnly": "npm run build"
+    "build": "tsup"
   },
-  "keywords": [
-    "port",
-    "scan",
-    "network",
-    "process",
-    "cli",
-    "tcp"
-  ],
-  "author": "okirmio",
+  "keywords": ["port", "scan", "network", "cli", "tcp", "banner"],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/okirmio-create/port-scan-cli"
-  },
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0"
